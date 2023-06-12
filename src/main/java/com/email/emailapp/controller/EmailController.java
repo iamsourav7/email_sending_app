@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EmailController {
 
+	@Autowired
     private final EmailService emailService;
 
-    @Autowired
+    
     public EmailController(EmailService emailService) {
         this.emailService = emailService;
     }
